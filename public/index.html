@@ -7,6 +7,118 @@
   <title></title>
   <link rel="stylesheet" href="/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <!-- media queries -->
+  <style>
+    /* desktop */
+
+    @media only screen and (min-width: 960px) {
+      .container {
+        width: 960px;
+      }
+      .header-left {
+        padding: 15px 5px 91px 50px !important;
+      }
+      .lets-you-row {
+        padding: 0 50px;
+      }
+      .advance-table {
+        padding: 15px 50px 70px 50px !important;
+      }
+      .one-solution-table {
+        text-align: center;
+      }
+      .one-solution-table img {
+        max-width: 611px;
+      }
+      .join-together-table .left-column {
+        padding: 20px 50px !important;
+      }
+      .join-together-table .middle-column {
+        padding: 20px 50px !important;
+      }
+      .join-together-table .right-column {
+        padding: 20px 50px !important;
+      }
+      .detail-table {
+        padding: 50px 50px 25px !important;
+      }
+    }
+
+    /* midsizes */
+
+    @media only screen and (max-width: 960px) {
+      .container {
+        width: 600px;
+      }
+    }
+
+    /* mobile */
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100%;
+      }
+      .header-left {
+        width: 100%;
+      }
+      .header-right {
+        width: 100%;
+      }
+      .lets-you-row .left-column {
+        width: 50%;
+      }
+      .lets-you-row .middle-column {
+        width: 50%;
+      }
+      .lets-you-row .right-column {
+        width: 100%;
+      }
+      .advance-table .image_head {
+        width: 100%;
+      }
+      .advance-table .left-column {
+        width: 100%;
+      }
+      .advance-table .left-column .left-store {
+        width: 100%;
+        text-align: center;
+      }
+      .advance-table .right-column {
+        width: 100%;
+      }
+      .advance-table .right-column .right-store {
+        width: 100%;
+        text-align: center;
+      }
+      .join-together-table .left-column {
+        width: 100%;
+        padding: 20px 50px !important;
+      }
+      .join-together-table .middle-column {
+        width: 100%;
+        padding: 20px 50px !important;
+      }
+      .join-together-table .right-column {
+        width: 100%;
+        padding: 20px 50px !important;
+      }
+      .detail-table .left-column .column-table {
+        width: 100%;
+      }
+      .detail-table .right-column .column-table {
+        width: 100%;
+      }
+      .detail-table .left-column {
+        width: 100%;
+      }
+      .detail-table .right-column {
+        width: 100%;
+      }
+      .icon-table img {
+        padding: 0 5px;
+      }
+    }
+  </style>
 </head>
 
 <body style="background: black;">
@@ -23,7 +135,7 @@
               <table class="header-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: rgb(30,87,153); background: -moz-linear-gradient(-45deg, rgba(30,87,153,1) 0%, rgba(101,255,253,1) 0%, rgba(32,124,202,1) 100%, rgba(41,137,216,1) 100%, rgba(34,150,238,1) 100%); background: -webkit-linear-gradient(-45deg, rgba(30,87,153,1) 0%,rgba(101,255,253,1) 0%,rgba(32,124,202,1) 100%,rgba(41,137,216,1) 100%,rgba(34,150,238,1) 100%); background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(101,255,253,1) 0%,rgba(32,124,202,1) 100%,rgba(41,137,216,1) 100%,rgba(34,150,238,1) 100%); padding: 15px 15px 70px 15px;">
                 <tr>
                   <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: white;">
-                    <img src="img/logo.png">
+                    <img src="https://image.ibb.co/bZOqjd/logo.png" alt="image of logo">
                     <h2 style="font-size: 30px; margin: 0; font-weight: 300; line-height: 1; padding: 25px 0 20px;">Get ready for</h2>
                     <h1 style="font-size: 80px; margin: 0; font-weight: 700; line-height: 1; padding: 0 0 10px;">Hero</h1>
                     <p style="font-style: italic; font-size: 14px; margin: 0; font-weight: 500; line-height: 1.5; padding: 20px 0 50px;">It seems like hundreds of new iWatch apps pop up every week, but which ones should you bother trying?</p>
@@ -33,10 +145,10 @@
               </table>
               <!-- end of left column -->
               <!-- start of right column -->
-              <table class="header-right" width="50%" align="right" cellspacing="0" cellpadding="0" border="0" style="background: white;">
+              <table class="header-right" width="50%" align="right" cellspacing="0" cellpadding="0" border="0" style="background: white; padding: 14px 0;">
                 <tr>
                   <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #7d7d7d;">
-                    <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px;">
+                    <table class="menu-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px;">
                       <tr>
                         <td align="center">
                           <a href="#" style="font-size: 14px; font-weight: 600; color: #7d7d7d; text-decoration: none;">About</a>
@@ -52,8 +164,8 @@
                   </td>
                 </tr>
                 <tr>
-                  <td align="center" valign="bottom" style="padding-top: 26px;">
-                    <img src="img/smartwatch.png" style="position: relative; bottom: -4px;">
+                  <td align="center" valign="bottom">
+                    <img src="https://image.ibb.co/hEyqjd/smartwatch.png" alt="image of smartwatch" style="position: relative; bottom: -4px;">
                   </td>
                 </tr>
               </table>
@@ -63,16 +175,16 @@
           <!-- end of header row -->
           <!-- start of lets you row -->
           <tr>
-            <td style="background: #fafafa;">
+            <td class="lets-you-row" style="background: #fafafa;">
               <h3 align="center" style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; font-size: 24px; font-weight: 300; padding: 36px 0 16px 0;">Hero let's you ...</h3>
               <!-- start of left column -->
-              <table class="header-left" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 15px 70px 15px;">
+              <table class="left-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 15px 70px 15px;">
                 <tr>
                   <td>
                     <table class="title-icon" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0;">
                       <tr>
                         <td>
-                          <img src="img/bell_icon.png">
+                          <img src="https://image.ibb.co/jmP7VJ/bell_icon.png" alt="bell icon">
                         </td>
                         <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Notify</td>
                       </tr>
@@ -92,13 +204,13 @@
               </table>
               <!-- end of left column -->
               <!-- start of middle column -->
-              <table class="header-middle" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 15px 70px 15px;">
+              <table class="middle-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 15px 70px 15px;">
                 <tr>
                   <td>
                     <table class="title-icon" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0;">
                       <tr>
                         <td>
-                          <img src="/img/share_icon.png">
+                          <img src="https://image.ibb.co/gw2uAJ/share_icon2.png" alt="share icon">
                         </td>
                         <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Share</td>
                       </tr>
@@ -118,13 +230,13 @@
               </table>
               <!-- end of middle column -->
               <!-- start of right column -->
-              <table class="header-right" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 15px 70px 15px;">
+              <table class="right-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 15px 70px 15px;">
                 <tr>
                   <td>
                     <table class="title-icon" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0;">
                       <tr>
                         <td>
-                          <img src="img/wifi_icon.png">
+                          <img src="https://image.ibb.co/nCewPd/wifi_icon.png" alt="wifi icon">
                         </td>
                         <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Connect</td>
                       </tr>
@@ -152,7 +264,7 @@
               <table class="advance-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 70px 15px 0px 15px;">
                 <tr>
                   <td align="center">
-                    <img src="img/image_head.jpg">
+                    <img src="https://image.ibb.co/gmvQHy/image_head.jpg" alt="image head" class="image_head">
                   </td>
                 </tr>
                 <tr>
@@ -164,7 +276,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <table class="advance-table-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 70px 15px 0px 15px;">
+                    <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 70px 15px 0px 15px;">
                       <tr>
                         <td>
                           <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; padding: 0 0 30px;">Lorem ipsum alskdj alskjdal alskjdals lask. Lorem ipsum alskdj alskjdal alskjdals lask. Lorem ipsum
@@ -172,12 +284,12 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="right">
-                          <img src="img/appstore.png">
+                        <td align="right" class="left-store">
+                          <img src="https://image.ibb.co/nrpwPd/appstore.png" alt="apple appstore">
                         </td>
                       </tr>
                     </table>
-                    <table class="advance-table-right" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 70px 15px 70px 15px;">
+                    <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 70px 15px 70px 15px;">
                       <tr>
                         <td>
                           <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; padding: 0 0 30px;">Lorem ipsum alskdj alskjdal alskjdals lask. Lorem ipsum alskdj alskjdal alskjdals lask. Lorem ipsum
@@ -185,8 +297,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="left">
-                          <img src="img/playstore.png">
+                        <td align="left" class="right-store">
+                          <img src="https://image.ibb.co/cAx5Hy/playstore.png" alt="google playstore">
                         </td>
                       </tr>
                     </table>
@@ -199,10 +311,10 @@
           <!-- start of one solution row -->
           <tr>
             <td>
-              <table class="solutions-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 50px 0; background: #141414;">
+              <table class="one-solution-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 50px 0; background: #141414;">
                 <tr>
                   <td>
-                    <img src="img/one_app.jpg" style="width: 100%;">
+                    <img src="https://image.ibb.co/kxT1qJ/one_app.jpg" alt="one app image" style="width: 100%;">
                   </td>
                 </tr>
               </table>
@@ -212,7 +324,7 @@
           <!-- start of join together row -->
           <tr>
             <td>
-              <table class="solutions-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 25px 0 75px; background: white;">
+              <table class="join-together-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 25px 0 75px; background: white;">
                 <tr>
                   <td>
                     <h3 align="center" style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; font-size: 24px; font-weight: 300; padding: 36px 0 16px 0; text-transform: capitalize;">Features
@@ -222,10 +334,10 @@
                 <tr>
                   <td>
                     <!-- start of column -->
-                    <table class="column-table" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 0; background: white;">
+                    <table class="left-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 0; background: white;">
                       <tr>
                         <td align="center">
-                          <img src="img/watch_screen.png">
+                          <img src="https://image.ibb.co/hnoCxy/watch_screen_39.png" alt="watch screen image">
                         </td>
                       </tr>
                       <tr>
@@ -248,10 +360,10 @@
                     </table>
                     <!-- end of column -->
                     <!-- start of column -->
-                    <table class="column-table" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 0; background: white;">
+                    <table class="middle-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 0; background: white;">
                       <tr>
                         <td align="center">
-                          <img src="img/watch_screen.png">
+                          <img src="https://image.ibb.co/hnoCxy/watch_screen_39.png" alt="watch screen image">
                         </td>
                       </tr>
                       <tr>
@@ -274,10 +386,10 @@
                     </table>
                     <!-- end of column -->
                     <!-- start of column -->
-                    <table class="column-table" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 0; background: white;">
+                    <table class="right-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 0; background: white;">
                       <tr>
                         <td align="center">
-                          <img src="img/watch_screen.png">
+                          <img src="https://image.ibb.co/hnoCxy/watch_screen_39.png" alt="watch screen image">
                         </td>
                       </tr>
                       <tr>
@@ -302,262 +414,272 @@
               </table>
               </td>
               </tr>
-            </td>
-          </tr>
-          <!-- end of join together row -->
-          <!-- start of detail row -->
-          <tr>
-            <td>
-              <table class="detail-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 50px 0 25px; background: #fafafa;">
-                <!-- start of one row -->
-                <tr>
-                  <td>
-                    <table class="one-row-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:  0; background: #fafafa;">
-                      <tr>
-                        <td>
-                          <!-- start of column -->
-                          <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
-                            <tr>
-                              <td>
-                                <!-- start of icon table -->
-                                <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+              <!-- end of join together row -->
+              <!-- start of detail row -->
+              <tr>
+                <td>
+                  <table class="detail-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 50px 0 25px; background: #fafafa;">
+                    <!-- start of one row -->
+                    <tr>
+                      <td>
+                        <table class="left-column" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:  0; background: #fafafa;">
+                          <tr>
+                            <td>
+                              <!-- start of column -->
+                              <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
+                                <tr>
                                   <td>
-                                    <img src="img/phone_icon.png">
-                                  </td>
-                                  <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                                    Responsive layout
-                                  </td>
+                                    <!-- start of icon table -->
+                                    <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+                                      <td>
+                                        <img src="https://image.ibb.co/fDWzcy/phone_icon.png" alt="phone icon">
+                                      </td>
+                                      <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                        Responsive layout
+                                      </td>
 
-                                </table>
-                                <!-- end of icon table -->
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
-                              </td>
-                            </tr>
-                          </table>
-                          <!-- end of column -->
-                          <!-- start of column -->
-                          <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
-                            <tr>
-                              <td>
-                                <!-- start of icon table -->
-                                <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+                                    </table>
+                                    <!-- end of icon table -->
+                                  </td>
+                                </tr>
+                                <tr>
                                   <td>
-                                    <img src="img/phone_icon-48.png">
+                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
                                   </td>
-                                  <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                                    Retina ready
-                                  </td>
-
-                                </table>
-                                <!-- end of icon table -->
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
-                              </td>
-                            </tr>
-                          </table>
-                          <!-- end of column -->
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <!-- end of one row -->
-                <!-- start of 2nd one row -->
-                <tr>
-                  <td>
-                    <table class="one-row-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:  0; background: #fafafa;">
-                      <tr>
-                        <td>
-                          <!-- start of column -->
-                          <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
-                            <tr>
-                              <td>
-                                <!-- start of icon table -->
-                                <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+                                </tr>
+                              </table>
+                              <!-- end of column -->
+                              <!-- start of column -->
+                              <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
+                                <tr>
                                   <td>
-                                    <img src="img/menu_icon.png">
-                                  </td>
-                                  <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                                    Userfriendly menus
-                                  </td>
+                                    <!-- start of icon table -->
+                                    <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+                                      <td>
+                                        <img src="https://image.ibb.co/fDWzcy/phone_icon.png" alt="retina icon">
+                                      </td>
+                                      <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                        Retina ready
+                                      </td>
 
-                                </table>
-                                <!-- end of icon table -->
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
-                              </td>
-                            </tr>
-                          </table>
-                          <!-- end of column -->
-                          <!-- start of column -->
-                          <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
-                            <tr>
-                              <td>
-                                <!-- start of icon table -->
-                                <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+                                    </table>
+                                    <!-- end of icon table -->
+                                  </td>
+                                </tr>
+                                <tr>
                                   <td>
-                                    <img src="img/share_icon.png">
+                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
                                   </td>
-                                  <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                                    Social share
-                                  </td>
-
-                                </table>
-                                <!-- end of icon table -->
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
-                              </td>
-                            </tr>
-                          </table>
-                          <!-- end of column -->
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <!-- end of 2nd one row -->
-                <!-- start of 3rd one row -->
-                <tr>
-                  <td>
-                    <table class="one-row-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:  0; background: #fafafa;">
-                      <tr>
-                        <td>
-                          <!-- start of column -->
-                          <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
-                            <tr>
-                              <td>
-                                <!-- start of icon table -->
-                                <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+                                </tr>
+                              </table>
+                              <!-- end of column -->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <!-- end of one row -->
+                    <!-- start of 2nd one row -->
+                    <tr>
+                      <td>
+                        <table class="left-column" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:  0; background: #fafafa;">
+                          <tr>
+                            <td>
+                              <!-- start of column -->
+                              <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
+                                <tr>
                                   <td>
-                                    <img src="img/check_icon.png">
-                                  </td>
-                                  <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                                    Various skins
-                                  </td>
+                                    <!-- start of icon table -->
+                                    <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+                                      <td>
+                                        <img src="https://image.ibb.co/kLrbPd/menu_icon.png" alt="menu icon">
+                                      </td>
+                                      <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                        Userfriendly menus
+                                      </td>
 
-                                </table>
-                                <!-- end of icon table -->
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
-                              </td>
-                            </tr>
-                          </table>
-                          <!-- end of column -->
-                          <!-- start of column -->
-                          <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
-                            <tr>
-                              <td>
-                                <!-- start of icon table -->
-                                <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+                                    </table>
+                                    <!-- end of icon table -->
+                                  </td>
+                                </tr>
+                                <tr>
                                   <td>
-                                    <img src="img/settings_icon.png">
+                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
                                   </td>
-                                  <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
-                                    Great performance
-                                  </td>
+                                </tr>
+                              </table>
+                              <!-- end of column -->
+                              <!-- start of column -->
+                              <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
+                                <tr>
+                                  <td>
+                                    <!-- start of icon table -->
+                                    <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+                                      <td>
+                                        <img src="https://image.ibb.co/izi1qJ/share_icon.png" alt="share icon">
+                                      </td>
+                                      <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                        Social share
+                                      </td>
 
-                                </table>
-                                <!-- end of icon table -->
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
-                              </td>
-                            </tr>
-                          </table>
-                          <!-- end of column -->
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <!-- end of 3rd one row -->
-              </table>
-            </td>
-          </tr>
-      </td>
-    </tr>
-    <!-- end of detail row -->
-    <!-- start of interest row -->
-    <tr>
-      <td>
-        <table class="interest-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background: rgb(30,87,153); background: -moz-linear-gradient(-45deg, rgba(30,87,153,1) 0%, rgba(101,255,253,1) 0%, rgba(32,124,202,1) 100%, rgba(41,137,216,1) 100%, rgba(34,150,238,1) 100%); background: -webkit-linear-gradient(-45deg, rgba(30,87,153,1) 0%,rgba(101,255,253,1) 0%,rgba(32,124,202,1) 100%,rgba(41,137,216,1) 100%,rgba(34,150,238,1) 100%); background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(101,255,253,1) 0%,rgba(32,124,202,1) 100%,rgba(41,137,216,1) 100%,rgba(34,150,238,1) 100%); padding: 75px 0;">
-          <tr>
-            <td align="center" style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif;">
-              <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: white; padding: 0 0 35px 0; font-weight: 300; text-transform: uppercase; font-size: 24px; margin: 0;">Interested in our app?</h3>
-              <p style="font-style: italic; color: white; font-size: 14px; line-height: 1.5; margin: 0; padding: 0 0 50px; max-width: 400px;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd. Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd.</p>
-              <a href="#" style="font-size: 12px; font-weight: 600; color: white; text-decoration: none; border: 2px solid white; padding: 10px 10px; border-radius: 4px; text-transform: uppercase;">Request a quote</a>
-            </td>
-          </tr>
+                                    </table>
+                                    <!-- end of icon table -->
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- end of column -->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <!-- end of 2nd one row -->
+                    <!-- start of 3rd one row -->
+                    <tr>
+                      <td>
+                        <table class="left-column" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:  0; background: #fafafa;">
+                          <tr>
+                            <td>
+                              <!-- start of column -->
+                              <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
+                                <tr>
+                                  <td>
+                                    <!-- start of icon table -->
+                                    <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+                                      <td>
+                                        <img src="https://image.ibb.co/dsE7VJ/check_icon.png" alt="check icon">
+                                      </td>
+                                      <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                        Various skins
+                                      </td>
+
+                                    </table>
+                                    <!-- end of icon table -->
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- end of column -->
+                              <!-- start of column -->
+                              <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 15px 20px; background: #fafafa;">
+                                <tr>
+                                  <td>
+                                    <!-- start of icon table -->
+                                    <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: #fafafa;">
+                                      <td>
+                                        <img src="https://image.ibb.co/b1Hi4d/settings_icon.png" alt="settings icon">
+                                      </td>
+                                      <td style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">
+                                        Great performance
+                                      </td>
+
+                                    </table>
+                                    <!-- end of icon table -->
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; font-size: 14px; line-height: 1.8; margin: 0; padding: 0 0 15px 0;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd Lorem ipsum aksjdaksj.</p>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- end of column -->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <!-- end of 3rd one row -->
+                  </table>
+                </td>
+              </tr>
+              <!-- end of detail row -->
+              <!-- start of interest row -->
+              <tr>
+                <td>
+                  <table class="interest-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background: rgb(30,87,153); background: -moz-linear-gradient(-45deg, rgba(30,87,153,1) 0%, rgba(101,255,253,1) 0%, rgba(32,124,202,1) 100%, rgba(41,137,216,1) 100%, rgba(34,150,238,1) 100%); background: -webkit-linear-gradient(-45deg, rgba(30,87,153,1) 0%,rgba(101,255,253,1) 0%,rgba(32,124,202,1) 100%,rgba(41,137,216,1) 100%,rgba(34,150,238,1) 100%); background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(101,255,253,1) 0%,rgba(32,124,202,1) 100%,rgba(41,137,216,1) 100%,rgba(34,150,238,1) 100%); padding: 75px 0;">
+                    <tr>
+                      <td align="center" style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif;">
+                        <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif; color: white; padding: 0 0 35px 0; font-weight: 300; text-transform: uppercase; font-size: 24px; margin: 0;">Interested in our app?</h3>
+                        <p style="font-style: italic; color: white; font-size: 14px; line-height: 1.5; margin: 0; padding: 0 0 50px; max-width: 400px;">Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd. Lorem ipsum aksjdaksj aksjdhaksj asdjalsd alskd.</p>
+                        <a href="#" style="font-size: 12px; font-weight: 600; color: white; text-decoration: none; border: 2px solid white; padding: 10px 10px; border-radius: 4px; text-transform: uppercase;">Request a quote</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- end of interest row -->
+              <!-- start of footer row -->
+              <tr>
+                <td>
+                  <table class="footer-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 25px 15px; background: white;">
+                    <tr>
+                      <td align="center">
+                        <h2 style="font-weight: 700; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #1b1b1b; text-transform: uppercase; font-size: 28px;">Hero</h2>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table class="icon-table" width="50%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 25px 15px; background: white;">
+                          <tr>
+                            <td align="center">
+                              <a href="http://www.twitter.com">
+                                <img src="https://image.ibb.co/eHGzcy/twitter_icon.png" alt="twitter icon">
+                              </a>
+                            </td>
+                            <td align="center">
+                              <a href="http://www.facebook.com">
+                                <img src="https://image.ibb.co/n1rnVJ/facebook_icon.png" alt="facebook icon">
+                              </a>
+                            </td>
+                            <td align="center">
+                              <a href="http://www.google.com">
+                                <img src="https://image.ibb.co/hkGbPd/google_icon.png" alt="google plus icon">
+                              </a>
+                            </td>
+                            <td align="center">
+                              <a href="http://www.pinterest.com">
+                                <img src="https://image.ibb.co/c1Tqjd/pinterest_icon.png" alt="pinterest icon">
+                              </a>
+                            </td>
+                            <td align="center">
+                              <a href="http://www.linkedin.com">
+                                <img src="https://image.ibb.co/jdzVjd/linkedin_icon.png" alt="linkedin icon">
+                              </a>
+                            </td>
+                            <td align="center">
+                              <a href="http://www.youtube.com">
+                                <img src="https://image.ibb.co/gv6MqJ/youtube_icon.png" alt="youtube icon">
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #b4b4b4; font-weight: 400; font-size: 10px; line-height: 1.8; margin: 0; padding: 20px 0;">2018 All rights reserved - Your company. Is your inbox overflowing?
+                          <a href="#" style="font-size: 10px; font-weight: 600; color: #2792ec; text-decoration: none;">Unsubscribe</a>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- end of footer row -->
         </table>
-      </td>
-    </tr>
-    <!-- end of interest row -->
-    <!-- start of footer row -->
-    <tr>
-      <td>
-        <table class="column-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 25px 15px; background: white;">
-          <tr>
-            <td align="center">
-              <h2 style="font-weight: 700; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #1b1b1b; text-transform: uppercase; font-size: 28px;">Hero</h2>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table class="column-table" width="50%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 25px 15px; background: white;">
-                <tr>
-                  <td align="center">
-                    <img src="img/twitter_icon.png">
-                  </td>
-                  <td align="center">
-                    <img src="img/facebook_icon.png">
-                  </td>
-                  <td align="center">
-                    <img src="img/google_icon.png">
-                  </td>
-                  <td align="center">
-                    <img src="img/pinterest_icon.png">
-                  </td>
-                  <td align="center">
-                    <img src="img/linkedin_icon.png">
-                  </td>
-                  <td align="center">
-                    <img src="img/youtube_icon.png">
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td align="center">
-              <p style="font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande',sans-serif; color: #b4b4b4; font-weight: 400; font-size: 10px; line-height: 1.8; margin: 0; padding: 20px 0;">2018 All rights reserved - Your company. Is your inbox overflowing? <a href="#" style="font-size: 10px; font-weight: 600; color: #2792ec; text-decoration: none;">Unsubscribe</a></p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <!-- end of footer row -->
-    </table>
-    <!-- end of container -->
-    </td>
-    </tr>
+        <!-- end of container -->
+        </td>
+        </tr>
   </table>
   <!-- end of html email -->
 </body>
